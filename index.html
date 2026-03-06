@@ -112,7 +112,20 @@
     gap: 10px;
     margin-bottom: 22px;
   }
-
+ 
+ @media (max-width: 400px) {
+    body { padding: 16px; align-items: flex-start; padding-top: 32px; }
+    .card { padding: 28px 20px 28px; }
+    .card-title { font-size: 22px; }
+    .currency-row { grid-template-columns: 1fr; gap: 8px; }
+    .swap-col { justify-content: flex-start; padding-left: 4px; padding-bottom: 0; }
+    .swap-btn { width: 34px; height: 34px; font-size: 16px; transform: rotate(90deg); }
+    .flag { font-size: 22px; }
+    .selector-code { font-size: 13px; }
+    input[type="number"] { font-size: 22px; padding: 12px 14px; }
+    .result-amount { font-size: 32px; }
+  }
+ 
   .currency-col {
     display: flex;
     flex-direction: column;
