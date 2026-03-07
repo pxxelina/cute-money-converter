@@ -13,10 +13,10 @@
   }
 
   body {
-    background-color: #e4f5e0;
-    background-image:
-      radial-gradient(ellipse at 20% 30%, #d6f0d0 0%, transparent 55%),
-      radial-gradient(ellipse at 80% 70%, #eaf8e6 0%, transparent 55%);
+    background-image: url('pur.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'Nunito', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -112,20 +112,62 @@
     gap: 10px;
     margin-bottom: 22px;
   }
- 
- @media (max-width: 400px) {
-    body { padding: 16px; align-items: flex-start; padding-top: 32px; }
-    .card { padding: 28px 20px 28px; }
-    .card-title { font-size: 22px; }
-    .currency-row { grid-template-columns: 1fr; gap: 8px; }
-    .swap-col { justify-content: flex-start; padding-left: 4px; padding-bottom: 0; }
-    .swap-btn { width: 34px; height: 34px; font-size: 16px; transform: rotate(90deg); }
-    .flag { font-size: 22px; }
-    .selector-code { font-size: 13px; }
-    input[type="number"] { font-size: 22px; padding: 12px 14px; }
-    .result-amount { font-size: 32px; }
+
+  @media (max-width: 400px) {
+    body {
+      padding: 16px;
+      align-items: flex-start;
+      padding-top: 32px;
+    }
+
+    .card {
+      padding: 28px 20px 28px;
+    }
+
+    .card-title {
+      font-size: 22px;
+    }
+
+    .currency-row {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .swap-col {
+      justify-content: flex-start;
+      padding-left: 4px;
+      padding-bottom: 0;
+    }
+
+    .swap-btn {
+      width: 34px;
+      height: 34px;
+      font-size: 16px;
+      transform: rotate(90deg);
+    }
+
+    .swap-btn:hover {
+      transform: rotate(270deg);
+    }
+
+    .flag {
+      font-size: 22px;
+    }
+
+    .selector-code {
+      font-size: 13px;
+    }
+
+    input[type="number"] {
+      font-size: 22px;
+      padding: 12px 14px;
+    }
+
+    .result-amount {
+      font-size: 32px;
+    }
   }
- 
+
   .currency-col {
     display: flex;
     flex-direction: column;
@@ -400,7 +442,7 @@ const currencies = [
   { code: 'BGN', name: 'Bulgarian Lev',          symbol: 'лв',   flag: '🇧🇬' },
   { code: 'RUB', name: 'Russian Ruble',          symbol: '₽',    flag: '🇷🇺' },
   { code: 'UAH', name: 'Ukrainian Hryvnia',      symbol: '₴',    flag: '🇺🇦' },
-  { code: 'ILS', name: 'Palestinian Shekel',     symbol: '₪',    flag: '🇵🇸' },  
+  { code: 'ILS', name: 'Israeli Shekel',         symbol: '₪',    flag: '🇮🇱' },
   { code: 'JOD', name: 'Jordanian Dinar',        symbol: 'JD',   flag: '🇯🇴' },
   { code: 'KWD', name: 'Kuwaiti Dinar',          symbol: 'KD',   flag: '🇰🇼' },
   { code: 'QAR', name: 'Qatari Riyal',           symbol: 'QR',   flag: '🇶🇦' },
