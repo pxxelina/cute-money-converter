@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Money Converter</title>
@@ -253,18 +254,35 @@
     .result-amount { font-size: 32px; }
   }
 </style>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+>>>>>>> 0910c62 (slight improvements)
 </head>
 <body>
 
 <div class="card">
+<<<<<<< HEAD
 
   <div class="card-title"><span class="px-hearts">♥</span> Money <span>Converter</span> <span class="px-hearts">♥</span></div>
+=======
+  <div class="card-title">
+    <span class="px-hearts">♥</span> Money <span>Converter</span> <span class="px-hearts">♥</span>
+  </div>
+>>>>>>> 0910c62 (slight improvements)
   <div class="card-sub">Quick & easy currency exchange</div>
   <div class="rate-status" id="rateStatus">Loading live rates…</div>
 
   <div class="amount-field">
     <span class="field-label">How much?</span>
+<<<<<<< HEAD
     <input type="number" id="amount" value="100" min="0" step="any">
+=======
+    <input type="number" id="amount" value="100" min="0" step="any" placeholder="0.00">
+>>>>>>> 0910c62 (slight improvements)
   </div>
 
   <div class="currency-row">
@@ -277,12 +295,23 @@
           <span class="selector-name" id="fromName">US Dollar</span>
         </div>
         <span class="selector-arrow">▾</span>
+<<<<<<< HEAD
         <select class="hidden-select" id="fromCurrency" onchange="onFromChange()"></select>
       </div>
     </div>
     <div class="swap-col">
       <button class="swap-btn" onclick="swapCurrencies()">⇄</button>
     </div>
+=======
+        <select class="hidden-select" id="fromCurrency"></select>
+      </div>
+    </div>
+    
+    <div class="swap-col">
+      <button class="swap-btn" title="Swap currencies">⇄</button>
+    </div>
+    
+>>>>>>> 0910c62 (slight improvements)
     <div class="currency-col">
       <span class="field-label">To</span>
       <div class="currency-selector">
@@ -292,22 +321,40 @@
           <span class="selector-name" id="toName">Moroccan Dirham</span>
         </div>
         <span class="selector-arrow">▾</span>
+<<<<<<< HEAD
         <select class="hidden-select" id="toCurrency" onchange="onToChange()"></select>
+=======
+        <select class="hidden-select" id="toCurrency"></select>
+>>>>>>> 0910c62 (slight improvements)
       </div>
     </div>
   </div>
 
+<<<<<<< HEAD
   <button class="convert-btn" onclick="convert()">Convert</button>
 
   <div class="result-wrap" id="resultBox">
     <div class="result-eyebrow">You get</div>
     <div class="result-amount" id="resultValue"></div>
+=======
+  <button class="convert-btn">Convert</button>
+
+  <div class="result-wrap" id="resultBox">
+    <div class="result-eyebrow">You get</div>
+    <div class="result-amount">
+      <span id="resultValue"></span>
+      <button class="copy-btn" id="copyBtn" title="Copy to clipboard">
+        <span>📋</span> Copy
+      </button>
+    </div>
+>>>>>>> 0910c62 (slight improvements)
     <div class="result-rate" id="resultRate"></div>
   </div>
 
   <div class="credit">designed by <span>Yassire Lina</span></div>
 </div>
 
+<<<<<<< HEAD
 <script>
 const currencies = [
   { code: 'USD', name: 'US Dollar',          symbol: '$',    flag: '🇺🇸' },
@@ -445,5 +492,10 @@ function convert() {
 populateSelects();
 loadRates();
 </script>
+=======
+<!-- App Data and Logic -->
+<script src="data.js"></script>
+<script src="scripts.js"></script>
+>>>>>>> 0910c62 (slight improvements)
 </body>
 </html>
